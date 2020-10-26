@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
-import MealPlan from './components/MealPlan';
+import MealPlan from './modules/Content/MealPlan';
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MealPlan name="Meal Plan!"/>
+    <MealPlan/>
   </React.StrictMode>,
   document.getElementById('root'),
 );
