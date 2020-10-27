@@ -8,14 +8,16 @@ import CheckSortPanel from './checkSortPanel/CheckSortPanel';
 import MenuCards from './menuCards/MenuCards';
 import InfographicPanel from './infographicPanel/InfographicPanel';
 
-const MealPlan = props => {
-    return(
+// import Theme from "../../Theme";
+
+const MealPlan = () => {
+    return (
     <>
-    <Header/>
-        <CheckSortPanel/>
-        <MenuCards/>
-        <InfographicPanel/>
-    <Footer/>
+        <Header/>
+            <CheckSortPanel/>
+            <MenuCards/>
+            <InfographicPanel/>
+        <Footer/>
     </>
     );
 }

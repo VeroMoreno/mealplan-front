@@ -1,11 +1,14 @@
 import React from 'react'
+import { HeaderStyle } from './header.style';
 
 const Header = props => {
     return(
         <header>
-        <div>
-            <h1>Meal Plan!</h1>
-        </div>
+            <HeaderStyle>
+                <div>
+                    <h1>Meal Plan!</h1>
+                </div>
+            </HeaderStyle>
         </header>
     );
 }
