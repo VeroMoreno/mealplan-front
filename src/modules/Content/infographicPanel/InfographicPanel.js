@@ -1,8 +1,14 @@
 import React from 'react'
+import { BottomPanel } from './infographicPanel.style';
 
 const InfographicPanel = props => {
     return(
-        <p>BOTTOM</p>
+        <BottomPanel className="infographics">
+            <div className="expandable">
+                <div className="infographic">Infographic</div>
+                <div className="infographic">Infographic</div>
+            </div>
+        </BottomPanel>
     );
 }
 

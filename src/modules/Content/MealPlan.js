@@ -8,15 +8,17 @@ import CheckSortPanel from './checkSortPanel/CheckSortPanel';
 import MenuCards from './menuCards/MenuCards';
 import InfographicPanel from './infographicPanel/InfographicPanel';
 
-// import Theme from "../../Theme";
+import { ContentStyle } from './mealplan.style';
 
 const MealPlan = () => {
     return (
     <>
         <Header/>
-            <CheckSortPanel/>
-            <MenuCards/>
-            <InfographicPanel/>
+            <ContentStyle className="content">
+                <CheckSortPanel/>
+                <MenuCards/>
+                <InfographicPanel/>
+            </ContentStyle>
         <Footer/>
     </>
     );
