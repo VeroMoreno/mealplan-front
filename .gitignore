@@ -1,8 +1,5 @@
-/node_modules
-/dist
-/.vscode
+node_modules
+dist
+.vscode
 .idea
 .DS_Store
-package-lock.json
-.yalc
-yalc.lock

@@ -6,9 +6,9 @@ const FooterStyle = styled.div`
     flex-direction: column-reverse;
     footer {
         p, h1 { margin: 0; }
-        background-color: ${props => props.theme.colors.ultraUltraLight};
-        color: ${props => props.theme.colors.ultraLight};
-        padding: ${props => props.theme.spaces.small};
+        background-color: ${(props) => props.theme.colors.ultraUltraLight};
+        color: ${(props) => props.theme.colors.ultraLight};
+        padding: ${(props) => props.theme.spaces.small};
     }
 `;
 
