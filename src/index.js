@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import MealPlan from './modules/Content/MealPlan';
 // import * as serviceWorker from './serviceWorker';
-import Theme from "./Theme";
+import Theme from './Theme';
 
 ReactDOM.render(
   <React.StrictMode>
     <Theme>
-      <MealPlan/>
+      <MealPlan />
     </Theme>
   </React.StrictMode>,
   document.getElementById('root'),
