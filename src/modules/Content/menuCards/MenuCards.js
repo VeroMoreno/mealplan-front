@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { MenuPanel } from './menuCards.style';
 
 const MenuCards = props => {
