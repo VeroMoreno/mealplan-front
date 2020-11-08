@@ -1,30 +1,35 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
-  Text, ButtonWrapper
+  Text, ButtonWrapper,
 } from './button.style';
 
-
-const Button = props => {
-  console.log(props);
+const Button = ({ disabled, text }) => {
   const onClick = () => {
-    !props.disabled && props.onClick();
+    // !disabled && onClick();
     console.log('clickclick');
-  }
+  };
   return (
     <ButtonWrapper
-    className={`buttonWrapper ${props.disabled ? 'disabled' : ''}`}
+      className={`buttonWrapper ${disabled ? 'disabled' : ''}`}
       onClick={onClick}
     >
-      {props.text && (
-        <Text>{props.text}</Text>
+      {text && (
+        <Text>{text}</Text>
       )}
     </ButtonWrapper>
   );
-}
+};
+
+Button.propTypes = {
+  disabled: PropTypes.bool,
+  text: PropTypes.string,
+  // onClick: PropTypes.func.isRequired,
+};
 
 Button.defaultProps = {
   text: 'Button',
-  disabled: false
-}
+  disabled: false,
+};
 
 export default Button;

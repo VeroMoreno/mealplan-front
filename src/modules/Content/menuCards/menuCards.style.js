@@ -7,7 +7,7 @@ const MenuPanel = styled.div`
     grid-area: content;
   }
   .calendar {
-    border: 1px solid ${props => props.theme.colors.ultraUltraLight};
+    border: 1px solid ${(props) => props.theme.colors.ultraUltraLight};
     &__header {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -15,21 +15,21 @@ const MenuPanel = styled.div`
       align-items: center;
       text-align: center;
         > div {
-          color: ${props => props.theme.colors.ultraLight};
+          color: ${(props) => props.theme.colors.ultraLight};
           text-transform: uppercase;
-          font-size: ${props => props.theme.fontSizes.small};
+          font-size: ${(props) => props.theme.fontSizes.small};
           font-weight: bold;
         }
     }
     &__week {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-auto-rows: 100px;
-      text-align: right;
+      grid-template-columns: repeat(5,1fr);
+      grid-auto-rows: minmax(100px, auto);
+      text-align: center;
       .day {
         padding: 5px;
-        border-right: 1px solid ${props => props.theme.colors.ultraUltraLight};
-        border-top: 1px solid ${props => props.theme.colors.ultraUltraLight};
+        border-right: 1px solid ${(props) => props.theme.colors.ultraUltraLight};
+        border-top: 1px solid ${(props) => props.theme.colors.ultraUltraLight};
           &:last-child {
             border-right: 0;
           }

@@ -5,7 +5,8 @@ const theme = {
   colors: {
     black: 'rgb(37, 37, 37)',
     white: '#F4F4F2',
-    gray: '#36313D',
+    gray: '#373a3f',
+    silver: '#73848d',
 
     ultraUltraDark: '#322f3d',
     ultraDark: '#59405C',
@@ -15,9 +16,9 @@ const theme = {
     ultraUltraLight: '#495464',
   },
   fontSizes: {
-    small: "0.9em",
-    medium: "2em",
-    large: "3em"
+    small: '0.9em',
+    medium: '2em',
+    large: '3em',
   },
   spaces: {
     small: '1em',

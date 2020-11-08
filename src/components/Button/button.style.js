@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const ButtonWrapper = styled.div`
+  background-color: ${(props) => props.theme.colors.gray};
   position: relative;
   display: flex;
   align-items: center;
@@ -10,25 +11,24 @@ const ButtonWrapper = styled.div`
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 2px double ${props => props.theme.colors.ultraUltraLight};
-  color: ${props => props.theme.colors.dark};
+  border: 1px solid ${(props) => props.theme.colors.ultraUltraLight};
+  color: ${(props) => props.theme.colors.dark};
   text-transform: uppercase;
   font-size: 16px;
   &:hover {
-    color: white;
-    border: 2px double ${props => props.theme.colors.ultraLight};
-    letter-spacing: 1px;
+    color: ${(props) => props.theme.colors.silver};
+    border: 1px solid ${(props) => props.theme.colors.silver};
   }
   &.disabled {
-    color: ${props => props.theme.colors.brandDisabled};
-    background-color: ${props => props.theme.colors.brandFillDisabled};
+    color: ${(props) => props.theme.colors.brandDisabled};
+    background-color: ${(props) => props.theme.colors.brandFillDisabled};
   }
 `;
 
 const Text = styled.p`
-  visibility: ${props => props.hidden ? 'hidden' : ''};
+  visibility: ${(props) => (props.hidden ? 'hidden' : '')};
 `;
 
 export {
-  Text, ButtonWrapper
+  Text, ButtonWrapper,
 };
