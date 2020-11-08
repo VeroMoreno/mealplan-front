@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { BottomPanel } from './infographicPanel.style';
 import Infographic from './../../../components/Infographic/Infographic';
 
