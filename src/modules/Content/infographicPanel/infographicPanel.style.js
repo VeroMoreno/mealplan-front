@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const BottomPanel = styled.div`
-  padding: ${props => props.theme.spaces.small};
+  padding-top: ${(props) => props.theme.spaces.small};
   .expandable {
-    border-top: 1px solid white;
+    border-top: 1px solid ${(props) => props.theme.colors.ultraUltraLight};
     display: flex;
     width: auto;
     display: flex;
