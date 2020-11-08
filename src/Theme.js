@@ -15,7 +15,7 @@ const theme = {
     ultraUltraLight: "#495464",
   },
   fontSizes: {
-    small: "1em",
+    small: "0.9em",
     medium: "2em",
     large: "3em"
   },
