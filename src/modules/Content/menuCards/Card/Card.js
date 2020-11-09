@@ -8,7 +8,7 @@ const Card = (props) => {
     <CardWrapper
       className="CardWrapper"
     >
-      <div className="article__name">
+      <div className="meal__name">
         <h2>{name}</h2>
       </div>
     </CardWrapper>
