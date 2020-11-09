@@ -6,6 +6,7 @@ const theme = {
     black: 'rgb(37, 37, 37)',
     white: '#F4F4F2',
     gray: '#373a3f',
+    grayDark: '#42474d',
     silver: '#73848d',
 
     ultraUltraDark: '#322f3d',
