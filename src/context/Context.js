@@ -5,12 +5,18 @@ const Context = React.createContext({});
 
 export function DataContextProvider({ children }) {
   const [mealsData, setMealsData] = useState(null);
+  const [lunchData, setLunchData] = useState(null);
+  const [dinnerData, setDinnerData] = useState(null);
   const [hide, setHide] = useState(true);
 
   return (
     <Context.Provider value={{
       mealsData,
       setMealsData,
+      lunchData,
+      setLunchData,
+      dinnerData,
+      setDinnerData,
       hide,
       setHide,
     }}
