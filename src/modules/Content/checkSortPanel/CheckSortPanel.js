@@ -1,24 +1,27 @@
-import React, { useCallback } from 'react';
+import React, { useContext } from 'react';
 import { TopPanel } from './checksortpanel.style';
+import { getMeals } from '../../../services/meal-service';
 import Button from '../../../components/Button/Button';
+import DataContext from '../../../context/Context';
 
 const CheckSortPanel = () => {
-  const showList = useCallback(
-    () => {
-      console.log('Mostrar la lista');
-    }, [], // Le dice a React que memorice independientemente de los argumentos.
-  );
+  const { setMealsData, hide, setHide } = useContext(DataContext);
 
-  const sortMenu = useCallback(
-    () => {
-      console.log('Ordenar el menu');
-    }, [],
-  );
+  const showList = async () => {
+    if (!hide) {
+      setHide(!hide);
+    }
+    const mealsData = await getMeals();
+    setMealsData(mealsData);
+  };
+
+  const sortMenu = () => {
+    console.log('Ordenar el menu');
+  };
 
   return (
     <TopPanel className="sortcheckPanel">
       <Button
-        disabled
         text="Check list"
         onClick={showList}
       />

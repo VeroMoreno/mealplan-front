@@ -1,0 +1,128 @@
+{
+	"name":"Menu1",
+	"menu":1,
+	"items": [
+		{
+		"name":"1 Super ensalada",
+		"id": "1",
+		"type": "lunch",
+		"ingredients" : ["maiz", "canonigos", "queso", "huevo", "nueces pecanas", "pollo", "aceite"],
+			"calories": {
+				"carbohydrates": 65,
+				"proteins": 153,
+				"fats": 484
+			}
+		},
+		{
+			"name":"2 Cocido de la mama",
+			"id": "2",
+			"type": "lunch",
+			"ingredients" : ["garbanzos", "pollo", "hueso de jamon", "bien de agua", "sal"],
+				"calories": {
+					"carbohydrates": 300,
+					"proteins": 200,
+					"fats": 100
+				}
+			},
+			{
+			"name":"3 Lentejas",
+			"id": "3",
+			"type": "lunch",
+			"ingredients" : ["lentejas", "chorizo", "pimiento verde", "sal", "cebolla"],
+				"calories": {
+					"carbohydrates": 350,
+					"proteins": 220,
+					"fats": 300
+				}
+			},
+		{
+		"name":"4 judias verdes con patatas y huevos",
+		"type": "lunch",
+		"id": "4",
+		"ingredients" : ["judias verdes", "patata", "huevo duro"],
+			"calories": {
+				"carbohydrates": 32,
+				"proteins": 48,
+				"fats": 66
+			}
+		},
+		{
+		"name":"5 Pasta con calabacin, zanahoria y cebolla",
+		"type": "lunch",
+		"id": "5",
+		"ingredients" : ["pasta", "calabacin", "cebolla", "zanahorias", "grana padano"],
+			"calories": {
+				"carbohydrates": 90,
+				"proteins": 61,
+				"fats": 90
+			}
+		},
+		{
+		"name":"El sandwich de aguacate del Gipsy Chef",
+		"id": "1",
+		"type": "dinner",
+		"ingredients" : ["ricotta", "cherry", "aguacate", "huevo", "mozzarella", "Pan de trigo de espelta integral"],
+			"calories": {
+				"carbohydrates": 138,
+				"proteins": 151,
+				"fats": 307
+			}
+		},
+		{
+		"name":"Filete de pollo empanado con revuelto de verduras",
+		"id": "2",
+		"type": "dinner",
+		"ingredients" : ["pollo", "pan rallado", "aceite", "calabaza", "calabacin", "puerro"],
+			"calories": {
+				"carbohydrates": 327,
+				"proteins": 224,
+				"fats": 600
+			}
+		},
+		{
+			"name":"Merluza a la gallega",
+			"id": "3",
+			"type": "dinner",
+			"ingredients" : ["merluza", "patatas", "cebolla", "laurel", "pimenton de la vera"],
+				"calories": {
+					"carbohydrates": 59,
+					"proteins": 44,
+					"fats": 213
+				}
+			},
+			{
+				"name":"Hamburguesas de cebolla y calabacin",
+				"id": "4",
+				"type": "dinner",
+			"ingredients" : ["calabacin", "ajo", "comino", "cebolla", "pan rallado", "aceite", "copos de avena", "sal"],
+				"calories": {
+					"carbohydrates": 81,
+					"proteins": 20,
+					"fats": 79
+				}
+				},
+		{
+			"name":"Revuelto con puerros",
+			"id": "5",
+			"type": "dinner",
+			"ingredients" : ["huevos", "puerro", "cebolla", "sal", "aceite"],
+				"calories": {
+					"carbohydrates": 13,
+					"proteins": 61,
+					"fats": 90
+				}
+			},
+			{
+			"name":"Tostadas de aguacate y huevo poché",
+			"id": "6",
+			"type": "dinner",
+			"ingredients" : ["huevos", "aguacate", "pan", "aceite"],
+			"calories": {
+				"carbohydrates": 59,
+				"proteins": 44,
+				"fats": 213
+			}
+			}
+	]
+}
+
