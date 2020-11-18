@@ -14,7 +14,7 @@ const MenuPanel = styled.div`
       grid-auto-rows: 50px;
       align-items: center;
       text-align: center;
-        > div {
+        > p {
           color: ${(props) => props.theme.colors.ultraLight};
           text-transform: uppercase;
           font-size: ${(props) => props.theme.fontSizes.small};

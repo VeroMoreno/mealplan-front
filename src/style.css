@@ -40,3 +40,5 @@ time, mark, audio, video {
   margin: 0;
   height: 100vh;
 }
+
+ul, li { list-style-type: none;}
