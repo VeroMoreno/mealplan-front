@@ -1,7 +1,10 @@
-<div style="text-align:center"><img src="./img/mealplan.png" alt="background" style="width:70%; margin-left:auto; margin-right:auto; display: block; width:300px"/></div>
+ <div style="text-align:center"><img src="./img/mealplan.png" alt="background" style="width:70%; margin-left:auto; margin-right:auto; display: block; width:300px"/></div>
 
 # 🌱 Mealplan!
-Application based in Javascript that shows a menu of meals (from own recipes) from Monday to Friday in a random way.
+Javascript-based application that randomly displays a menu of meals (own recipes) from Monday to Friday
+
+### Feature
+Developed with ⚡️ React Hooks
 
 ### Technologies
 * ✨ Node.js
@@ -9,12 +12,13 @@ Application based in Javascript that shows a menu of meals (from own recipes) fr
 * 💅🏾 Styled Components
 
 ### Funcionality
-* Editable menu, replace one meal with another (drag & drop)
-* Total sum of nutrients per day (presentation in charts)
+* Show food list button
+* Button sorts meals randomly
+* Drag & drop menu
+* Nutrient charts
 
-### View
-* Drag & drop of the week
-* Menu panel
-* Sort button
-* Total nutrients section (+ Button)
-* Food listing section (Check list button)
+### Dependencies
+* chart.js
+* react-chartjs-2
+* react-beautiful-dnd
+* styled-components
