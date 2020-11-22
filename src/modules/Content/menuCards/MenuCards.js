@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useRef } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import Card from './Card/Card';
 import { MenuPanel } from './menuCards.style';
@@ -6,7 +6,7 @@ import DataContext from '../../../context/Context';
 
 const MenuCards = () => {
   const {
-    lunchData, setLunchData, dinnerData, setDinnerData,
+    lunchData, setLunchData, dinnerData, setDinnerData, setDayOfWeek,
   } = useContext(DataContext);
   // const [lunchData, setLunchData] = useState([]);
   // const [dinnerMealData, setDinnerMeals] = useState([]);
@@ -21,12 +21,24 @@ const MenuCards = () => {
     getInfo();
   }, []);
 
-  const week = ['Mon', 'Thu', 'Wed', 'Thur', 'Fri'];
+  const week = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 
-  const reorder = (list, startIndex, endIndex) => {
-    const result = Array.from(list);
-    const [removed] = result.splice(startIndex, 1);
-    result.splice(endIndex, 0, removed);
+  const reorder = (list, startIndex, endIndex, startColumn, endColumn) => {
+    const result = Array.from(list.slice(0, 5));
+    // encontramos la columna de inicio dentro de la lista
+    // const startColumnIndex = result.findIndex((item) => item.id === startColumn);
+    // encontramos la columna final dentro de la lista
+    // const endColumnIndex = result.findIndex((item) => item.id === endColumn);
+    const [removedS] = result.splice(startIndex, 1);
+    // INTENTOS FRUSTRADOS PARA QUE FUNCIONE, MAL MAL MAL MAAAAAAAAL!
+    let removedE = 0;
+    if (result.length === endIndex) {
+      [removedE] = result.splice(endIndex - 1, 1);
+    } else {
+      [removedE] = result.splice(endIndex, 1);
+    }
+    result.splice(endIndex, 0, removedS);
+    result.splice(startIndex, 0, removedE);
     return result;
   };
 
@@ -34,7 +46,8 @@ const MenuCards = () => {
     const { destination, source } = result;
     if (!result.destination) return;
     if (result.destination.index === result.source.index) return;
-    const newElements = reorder(lunchData, source.index, destination.index);
+    // eslint-disable-next-line max-len
+    const newElements = reorder(lunchData, source.index, destination.index, source.droppableId, destination.droppableId);
     setLunchData(newElements);
   };
 
@@ -46,13 +59,25 @@ const MenuCards = () => {
     setDinnerData(newElements);
   };
 
+  const buttonRef = useRef(null);
+  const getDayNutrients = (dayWeek) => {
+    setDayOfWeek(dayWeek);
+  };
+
   return (
     <MenuPanel>
       <main>
         <div className="calendar">
           <div className="calendar__header">
             {week && week.map((day) => (
-              <p key={day}>{day}</p>
+              <button
+                ref={buttonRef}
+                type="button"
+                onClick={() => getDayNutrients(day)}
+                key={day}
+              >
+                {day}
+              </button>
             ))}
           </div>
           { lunchData && (
@@ -117,6 +142,17 @@ const MenuCards = () => {
           </DragDropContext>
           )}
         </div>
+        {(!dinnerData || !lunchData) && (
+        <div className="clickToStart blink">
+          <p>
+            Click
+            {' '}
+            <span>random button</span>
+            {' '}
+            to start
+          </p>
+        </div>
+        )}
       </main>
     </MenuPanel>
   );

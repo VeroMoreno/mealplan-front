@@ -4,39 +4,38 @@ import { Doughnut } from 'react-chartjs-2';
 import { InfoWrapper } from './infographic.style';
 
 const data = {
-  labels: ['Carbohydrates', 'Proteins', 'Fats'],
+  labels: ['no data'],
   datasets: [
     {
       label: 'Total of nutrients',
-      data: [12, 3, 5],
+      data: [100],
       backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
+        'rgba(115, 132, 141, 0.3)',
       ],
       borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
+        'rgba(115, 132, 141, 1)',
       ],
-      borderWidth: 1,
+      borderWidth: 0,
     },
   ],
 };
 
-const Infographic = ({ text }) => (
-  <InfoWrapper>
+const Infographic = ({ id, text, nutriData }) => (
+  <InfoWrapper
+    id={id}
+    className="customChart"
+  >
     {text && (
     <p>{text}</p>
     )}
     <div>
       <Doughnut
-        data={data}
+        data={nutriData || data}
         height={100}
         options={{
           maintainAspectRatio: false,
           legend: {
-            position: 'right',
+            position: 'left',
             labels: {
               boxWidth: 11,
             },
@@ -58,10 +57,14 @@ const Infographic = ({ text }) => (
 
 Infographic.propTypes = {
   text: PropTypes.string,
+  nutriData: PropTypes.array,
+  id: PropTypes.string,
 };
 
 Infographic.defaultProps = {
   text: 'Nutri info',
+  nutriData: [],
+  id: 'nutriInfo',
 };
 
 export default Infographic;

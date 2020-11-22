@@ -8,6 +8,7 @@ export function DataContextProvider({ children }) {
   const [lunchData, setLunchData] = useState(null);
   const [dinnerData, setDinnerData] = useState(null);
   const [hide, setHide] = useState(true);
+  const [dayOfWeek, setDayOfWeek] = useState(null);
 
   return (
     <Context.Provider value={{
@@ -19,6 +20,8 @@ export function DataContextProvider({ children }) {
       setDinnerData,
       hide,
       setHide,
+      dayOfWeek,
+      setDayOfWeek,
     }}
     >
       {children}

@@ -14,7 +14,8 @@ const ButtonWrapper = styled.div`
   border: 1px solid ${(props) => props.theme.colors.ultraUltraLight};
   color: ${(props) => props.theme.colors.dark};
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
+  font-family: 'Montserrat',sans-serif;
   &:hover {
     color: ${(props) => props.theme.colors.silver};
     border: 1px solid ${(props) => props.theme.colors.silver};
