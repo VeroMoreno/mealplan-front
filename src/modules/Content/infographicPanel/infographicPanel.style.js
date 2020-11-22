@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../Device';
 
 const BottomPanel = styled.div`
   padding-top: ${(props) => props.theme.spaces.small};
@@ -27,6 +28,17 @@ const BottomPanel = styled.div`
       color: ${(props) => props.theme.colors.gray};
       cursor: pointer;
       font-weight: bold;
+    }
+    @media ${device.mobileL} {
+      display:block;
+      margin: 20px 0;
+      flex-direction: column-reverse;
+      display: flex;
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+      }
     }
   }
 `;

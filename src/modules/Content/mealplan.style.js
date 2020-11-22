@@ -5,6 +5,8 @@ const ContentStyle = styled.div`
     margin: 0 auto;
     max-width: 900px;
     width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 `;
 
 export { ContentStyle };
