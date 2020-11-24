@@ -17,7 +17,7 @@ const BottomPanel = styled.div`
       li {
         list-style-type: decimal-leading-zero;
         text-align: left;
-        width: 420px;
+        width: 400px;
         box-sizing: border-box;
         padding: 10px 0 0 0;
       }
