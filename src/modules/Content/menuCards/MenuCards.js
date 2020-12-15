@@ -29,6 +29,16 @@ const MenuCards = () => {
     // const startColumnIndex = result.findIndex((item) => item.id === startColumn);
     // encontramos la columna final dentro de la lista
     // const endColumnIndex = result.findIndex((item) => item.id === endColumn);
+
+    console.log(startIndex);
+    console.log(endIndex);
+    const firstPart = result.slice(0, startIndex + 1);
+    const secondPart = result.slice(startIndex + 1);
+    const element = result[startIndex];
+    console.log(firstPart);
+    console.log(secondPart);
+    console.log(element);
+    debugger;
     const [removedS] = result.splice(startIndex, 1);
     // INTENTOS FRUSTRADOS PARA QUE FUNCIONE, MAL MAL MAL MAAAAAAAAL!
     let removedE = 0;
@@ -40,6 +50,22 @@ const MenuCards = () => {
     result.splice(endIndex, 0, removedS);
     result.splice(startIndex, 0, removedE);
     return result;
+  };
+
+  const test = (list, posStart, posEnd) => {
+    /* let lista = ['gato', 'perro', 'oveja', 'cabra'];
+    function cambiar(array, posStart, posEnd) {
+      let valEnd = array[posEnd];
+      array[posEnd] = array[posStart];
+      array[posStart] = valEnd;
+      return array;
+    }
+    console.info(cambiar(lista, 0, 2));
+    console.info(cambiar(lista, 1, 2)); */
+    const valEnd = list[posEnd];
+    list[posEnd] = list[posStart];
+    list[posStart] = valEnd;
+    return list;
   };
 
   const onDragEndOne = (result) => {
