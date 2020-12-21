@@ -28,3 +28,19 @@ Developed with ⚡️ React Hooks [ useState, useEffect, useContext, useRef ]
 * react-chartjs-2
 * react-beautiful-dnd
 * styled-components
+
+### How to
+NPX, to install packages that react needs
+```shell
+ npm install -g npx (test version: npx -v)
+```
+
+Later of have **node** & **npm** installed execute `npx create-react-app nameOfProjectWithouthComillas`
+
+To verify that the package has been installed successfully, run in the console: `create-react-app` and wait for a successful installation message.
+
+ Lets see!: `npm start`
+
+### To be continue...
+* Window.localStorage
+* backend
