@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/meal-plan/static/css/main.4630cddb.chunk.css",
+    "main.js": "/meal-plan/static/js/main.2b7a84ff.chunk.js",
+    "main.js.map": "/meal-plan/static/js/main.2b7a84ff.chunk.js.map",
+    "runtime-main.js": "/meal-plan/static/js/runtime-main.62b2ed27.js",
+    "runtime-main.js.map": "/meal-plan/static/js/runtime-main.62b2ed27.js.map",
+    "static/js/2.a484ed74.chunk.js": "/meal-plan/static/js/2.a484ed74.chunk.js",
+    "static/js/2.a484ed74.chunk.js.map": "/meal-plan/static/js/2.a484ed74.chunk.js.map",
+    "index.html": "/meal-plan/index.html",
+    "precache-manifest.246f307cb48ddd4324988ddda9338a21.js": "/meal-plan/precache-manifest.246f307cb48ddd4324988ddda9338a21.js",
+    "service-worker.js": "/meal-plan/service-worker.js",
+    "static/css/main.4630cddb.chunk.css.map": "/meal-plan/static/css/main.4630cddb.chunk.css.map",
+    "static/js/2.a484ed74.chunk.js.LICENSE.txt": "/meal-plan/static/js/2.a484ed74.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62b2ed27.js",
+    "static/js/2.a484ed74.chunk.js",
+    "static/css/main.4630cddb.chunk.css",
+    "static/js/main.2b7a84ff.chunk.js"
+  ]
+}
