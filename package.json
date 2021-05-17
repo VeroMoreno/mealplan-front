@@ -1,5 +1,6 @@
 {
   "name": "mealplan",
+  "homepage":"https://veromoreno.github.io/mealplan-front/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
