@@ -13,11 +13,11 @@
 				"pollo",
 				"aceite"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 66,
 				"proteins": 153,
 				"fats": 1000
-			}
+			}]
 		},
 		{
 			"name": "Cocido de la mama",
@@ -30,11 +30,11 @@
 				"bien de agua",
 				"sal"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 300,
 				"proteins": 200,
 				"fats": 100
-			}
+			}]
 		},
 		{
 			"name": "Lentejas",
@@ -62,11 +62,11 @@
 				"patata",
 				"huevo duro"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 32,
 				"proteins": 48,
 				"fats": 66
-			}
+			}]
 		},
 		{
 			"name": "Pasta con calabacin, zanahoria y cebolla",
@@ -79,11 +79,11 @@
 				"zanahorias",
 				"grana padano"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 90,
 				"proteins": 61,
 				"fats": 90
-			}
+			}]
 		},
 		{
 			"name": "Salmón ahumado con patatas hervidas",
@@ -94,11 +94,11 @@
 				"patatas",
 				"cebolla"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 90,
 				"proteins": 61,
 				"fats": 90
-			}
+			}]
 		},
 		{
 			"name": "El sandwich de aguacate del Gipsy Chef",
@@ -112,11 +112,11 @@
 				"mozzarella",
 				"Pan de trigo de espelta integral"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 1000,
 				"proteins": 151,
 				"fats": 307
-			}
+			}]
 		},
 		{
 			"name": "Filete de pollo empanado con revuelto de verduras",
@@ -130,11 +130,11 @@
 				"calabacin",
 				"puerro"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 327,
 				"proteins": 224,
 				"fats": 600
-			}
+			}]
 		},
 		{
 			"name": "Merluza a la gallega",
@@ -147,11 +147,11 @@
 				"laurel",
 				"pimenton de la vera"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 59,
 				"proteins": 44,
 				"fats": 213
-			}
+			}]
 		},
 		{
 			"name": "Hamburguesas de cebolla y calabacin",
@@ -167,11 +167,11 @@
 				"copos de avena",
 				"sal"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 81,
 				"proteins": 20,
 				"fats": 79
-			}
+			}]
 		},
 		{
 			"name": "Revuelto con puerros",
@@ -184,11 +184,11 @@
 				"sal",
 				"aceite"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 13,
 				"proteins": 61,
 				"fats": 90
-			}
+			}]
 		},
 		{
 			"name": "Tostadas de aguacate y huevo poché",
@@ -200,13 +200,11 @@
 				"pan",
 				"aceite"
 			],
-			"calories": {
+			"calories": [{
 				"carbohydrates": 59,
 				"proteins": 44,
 				"fats": 413
-			}
+			}]
 		}
-	],
-	"menu": 1,
-	"name": "Menu1"
+	]
 }

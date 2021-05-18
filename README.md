@@ -1,5 +1,7 @@
  <div style="text-align:center"><img src="./img/mealplan.png" alt="background" style="width:70%; margin-left:auto; margin-right:auto; display: block; width:300px"/></div>
 
+FYI at the end
+
 # 🌱 Mealplan!
 Javascript-based application that randomly displays a menu of meals (own recipes) from Monday to Friday
 You can use the draggable to change the position of the cards.
@@ -44,3 +46,11 @@ To verify that the package has been installed successfully, run in the console: 
 ### To be continue...
 * Window.localStorage
 * backend
+
+* Fyi
+Ahora mismo el proyecto está preparado para funcionar apuntando a la api mealplan-back,
+por este motivo no voy a hacer la build para github pages.
+
+En todo caso, ahora cuando intento obtener la info de menuData.json no funciona.
+Ya que de algun modo la manera en la que se ha formado el json es distinta en bbdd que
+en el propio json "a pelo". Revisar.

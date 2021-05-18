@@ -20,9 +20,9 @@ const InfographicPanel = () => {
     const startIndex = sort[dayOfWeek] - 1;
     const endIndex = sort[dayOfWeek];
     const totalLunchNutrients = lunchData.slice(startIndex, endIndex)
-      .reduce((acu, element) => element.calories[nutrient] + acu, 0);
+      .reduce((acu, element) => element.calories[0][nutrient] + acu, 0);
     const totalDinnerNutrients = dinnerData.slice(startIndex, endIndex)
-      .reduce((acu, element) => element.calories[nutrient] + acu, 0);
+      .reduce((acu, element) => element.calories[0][nutrient] + acu, 0);
     return totalLunchNutrients + totalDinnerNutrients;
   };
 
@@ -54,9 +54,9 @@ const InfographicPanel = () => {
 
   const getTotalNutrients = (nutrient) => {
     const totalLunchNutrients = lunchData.slice(0, 5)
-      .reduce((acu, element) => element.calories[nutrient] + acu, 0);
+      .reduce((acu, element) => element.calories[0][nutrient] + acu, 0);
     const totalDinnerNutrients = dinnerData.slice(0, 5)
-      .reduce((acu, element) => element.calories[nutrient] + acu, 0);
+      .reduce((acu, element) => element.calories[0][nutrient] + acu, 0);
     return totalLunchNutrients + totalDinnerNutrients;
   };
 
@@ -95,8 +95,8 @@ const InfographicPanel = () => {
         {data && hide && (
           <>
             <ol className="expandable--menuList">
-              {data.items.map((el) => (
-                <li>{el.name}</li>
+              {data.map((el) => (
+                <li key={el.name}>{el.name}</li>
               ))}
             </ol>
             <button
