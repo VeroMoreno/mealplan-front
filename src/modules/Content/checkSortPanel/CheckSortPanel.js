@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { TopPanel } from './checksortpanel.style';
-import { getMeals, getLunchs, getDinners } from '../../../services/meal-service';
+import { getMeals, getLunchs, getDinners } from '../../../services/meal-back-service';
+// import { getMeals, getLunchs, getDinners } from '../../../services/meal-service';
 import Button from '../../../components/Button/Button';
 import DataContext from '../../../context/Context';
 

@@ -57,13 +57,13 @@ const Infographic = ({ id, text, nutriData }) => (
 
 Infographic.propTypes = {
   text: PropTypes.string,
-  nutriData: PropTypes.array,
+  nutriData: PropTypes.object,
   id: PropTypes.string,
 };
 
 Infographic.defaultProps = {
   text: 'Nutri info',
-  nutriData: [],
+  nutriData: {},
   id: 'nutriInfo',
 };
 
